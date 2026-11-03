@@ -1,0 +1,114 @@
+.all-products {
+  padding: 45px 8% 60px;
+  background-color: var(--bg-surface);
+  transition: background-color 0.25s ease;
+  min-height: calc(100vh - 250px);
+}
+
+.all-products .section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.all-products h2 {
+  font-size: 32px;
+  color: var(--text-main);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.all-products .section-header p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 32px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill-btn {
+  background-color: var(--primary-light);
+  color: var(--text-main);
+  border: 1px solid transparent;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.pill-btn.active {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 2px 10px rgba(219, 75, 145, 0.35);
+}
+
+.results-count {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Grid */
+.all-products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Empty Results */
+.empty-results {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--primary-light);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.empty-results h3 {
+  color: var(--text-main);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.empty-results p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.reset-filter-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reset-filter-btn:hover {
+  background-color: var(--primary-hover);
+}
